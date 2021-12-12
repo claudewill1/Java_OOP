@@ -1,13 +1,19 @@
 public class Gorilla extends Mammal {
-    Mammal energyLevel;
     
-    public int throwSomething(String gorilla) {
-        System.out.printf("%s threw a boulder",gorilla);
-        return energyLevel -= 5;
+    public void throwSomething() {
+        System.out.println("The gorilla threw a boulder");
+        energyLevel -= 5;
     }
+    
 
-    public int eatBananas(String gorilla) {
-        System.out.printf("%s is super happy now that he has bananas.");
-        return energyLevel += 10;
+    public void eatBananas(){
+        System.out.println("The gorilla super happy now that he has bananas.");
+        energyLevel += 10;
+    }
+    
+
+    public void climb() {
+        System.out.println("The gorilla climbed a tree");
+        energyLevel -= 1;
     }
 }
