@@ -1,10 +1,10 @@
 public class Human {
     
-    private int health = 100;
-    private int strength = 3;
-    private int stealth = 3;
-    private int intelligence = 3;
-    private String name = "";
+    public int health = 100;
+    public int strength = 3;
+    public int stealth = 3;
+    public int intelligence = 3;
+    public String name = "";
 
     public Human() {
 
@@ -12,10 +12,13 @@ public class Human {
     public Human(String name) {
         this.name = name;
     }
+    
     public String getName() {
         return name;
     }
-    
+    public void setHealth(int health){
+        this.health = health;
+    }
     public int getHealth() {
         return health;
     }
