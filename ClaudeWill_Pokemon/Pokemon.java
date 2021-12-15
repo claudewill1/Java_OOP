@@ -5,8 +5,10 @@ public class Pokemon {
 
     private static int count = 0;
 
-    public Pokemon
-    void attackPokemon(Pokemon pokemon) {
+    public Pokemon() {
+        
+    }
+    public void attackPokemon(Pokemon pokemon) {
         pokemon.health -= 10;
     }
 }
